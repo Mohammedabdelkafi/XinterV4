@@ -1,7 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
-	fmt.Println("Work In Progress")
+	tokenize()
+}
+
+func tokenize() {
+	str := "Hello World"
+	res := strings.Split(str, " ")
+	fmt.Printf("%v\n", res)
 }
